@@ -17,8 +17,8 @@ const dom = document.querySelector("body")
 function submitData(name, email){
 
     let toStringify = {
-        name,
-        email
+        name: name,
+        email: email
     }
     
     let jsonRequest = {
@@ -36,5 +36,15 @@ function submitData(name, email){
     .catch(error => dom.innerHTML = error.message); // Catch failed post using catch
 
 }
+// const employees = [
+//     {
+//     name: "Rob",
+//     email: "robby@gmail"
+// }, {
+//     name: "Jerry",
+//     email: "fourfiners@gmail"
+// }
+// ]
 
-submitData("Steve-O", "s1@gmail")
+submitData("OnePunch", "P1@gmail")
+//submitData(employees[0], employees[1])
